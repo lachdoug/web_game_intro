@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Web Workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous">
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+
+  <style>
+  html body { padding: 15px 0px; margin-bottom: 200px;}
+  ul { list-style-type: square; }
+  .home_page { margin-top: 50px; }
+  .home_page h2 { color: #5bc0de; text-shadow: 2px 2px rgba(0, 0, 0, 0.1); }
+  .devise_form { max-width: 300px; display: inline-block; }
+  table th { padding-right: 10px; border-bottom: 1px solid #ccc; }
+  table td { padding-right: 10px; }
+  pre { max-height: 300px; background-color: #fff; color: #a04; }
+  .tab-pane-content { padding: 10px; }
+  #server_events { white-space: nowrap; overflow-x: scroll; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; }
+  .alert { text-align: left; }
+  h1 {border-top: 1px solid black;}
+  </style>
+
+
+<body>
+
+<div class="container-fluid">
+
+<a href="index.html"><i class="fa fa-home"></i></a>
+
+<h1>HTML5 Web games</h1>
+
+<h4>Example games</h4>
+<p><a href="http://hexgl.bkcore.com/play/" target="webgame_workshop">HexGL racer</a></p>
+<p><a href="http://www.cross-code.com/en/start" target="webgame_workshop">Crosscode</a></p>
+<p><a href="https://playcanv.as/p/3RerJIcy/" target="webgame_workshop">Space racer</a></p>
+<p><a href="https://www.freeriderhd.com" target="webgame_workshop">Free rider</a></p>
+
+<h1>Codepen</h1>
+
+<p>Setup an account at <a href="http://codepen.io">Codepen.</a></p>
+
+<p>Example games</p>
+<p><a href="http://codepen.io/towc/pen/BfAhe" target="webgame_workshop">Particle exploder</a></p>
+<p><a href="http://codepen.io/eliorshalev/pen/yOrrxG" target="webgame_workshop">Towers of Hanoi</a></p>
+<p><a href="http://codepen.io/olivier-c/pen/qEeNOw" target="webgame_workshop">Space invaders</a></p>
+<p><a href="http://codepen.io/jeffibacache/pen/bzBsp" target="webgame_workshop">Asteriods</a></p>
+
+
+
+<h1>HTML documents</h1>
+
+<h3>1</h3>
+<p><code>&lt;!DOCTYPE html&gt;</code></p>
+
+<h3>2</h3>
+<p>HTML5 document</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="utf-8"/&gt;
+  &lt;title&gt;Empty document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;style&gt;
+  h1 { color: blue; }
+&lt;/style&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+<h3>3</h3>
+<p>HTML element:</p>
+<pre>
+&lt;tag attribute="value"&gt;
+  some content...
+&lt;/tag&gt;
+</pre>
+
+<h3>4</h3>
+<p>Document<br>
+<code>html</code>, <code>head</code>, <code>title</code>, <code>link</code>, <code>style</code>, <code>script</code>
+</p>
+<p>Sections<br>
+<code>body</code>, <code>h1 - h6</code>
+</p>
+<p>Groups<br>
+<code>p</code>, <code>br</code>, <code>div</code>
+</p>
+<p>Text<br>
+<code>a</code>, <code>strong</code>, <code>small</code>, <code>i</code>, <code>span</code>
+</p>
+<p>Embeded<br>
+<code>img</code>
+</p>
+<p>Forms<br>
+<code>form, input, button</code>
+</p>
+<p><a href="https://www.w3.org/TR/html-markup/elements-by-function.html#elements-by-function"
+      target="https://www.w3.org/TR/html-markup/elements-by-function.html#elements-by-function">W3 HTML language reference</a></p>
+
+<h3>5</h3>
+<p>Attributes<br>
+<code>id</code>, <code>class</code>, <code>style</code>, <code>title</code>
+</p>
+<pre>
+&lt;div id="message_1" class="message"&gt;
+  ...
+&lt;/div&gt;
+</pre>
+
+
+<h1>Running HTML code</h1>
+
+<h3>1</h3>
+<p>Create a plain text file on your computer called 'index.html'. Paste in this code:</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="utf-8"/&gt;
+  &lt;title&gt;Hello&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;style&gt;
+  h1 { color: blue; }
+  h1.fade { opacity: 0.5; }
+&lt;/style&gt;
+
+&lt;body&gt;
+  &lt;h1 id="heading"&gt;Hello world&lt;/h1&gt;
+&lt;/body&gt;
+
+&lt;script&gt;
+  document.getElementById('heading').onclick =
+  function() { this.className = "fade"; }
+&lt;/script&gt;
+
+&lt;/html&gt;
+</pre>
+<p>Save the file and load it in your browser.</p>
+
+<h3>2</h3>
+<p>Run the app in Codepen by pasting in the HTML, CSS and Javascript.</p>
+
+
+<h1>Styling</h1>
+
+<h3>1</h3>
+<p>Styles can be defined and applied using selectors.</p>
+<p>Common selectors:</p>
+<ul>
+  <li>Tag name - no prefix <code>div{ margin: 5px; }</code></li>
+  <li>Class - '.' prefix <code>.cancel_button{ color: red; }</code></li>
+  <li>ID - '#' prefix <code>#start{ boder: 1px solid blue; }</code></li>
+</ul>
+
+<h3>2</h3>
+<p>Add a <code>div</code> element.</p>
+<pre>
+&lt;div&gt;
+  Some text.
+&lt;/div&gt;
+</pre>
+
+<h3>3</h3>
+<p>Try these styles using CSS the <code>div{}</code> tag name selector.</p>
+<p>
+<code>font-size: 16px</code><br>
+<code>color: #ccc;</code><br>
+<code>background-color: #48d;</code><br>
+</p>
+<p>
+<code>height: 24px;</code><br>
+<code>height: 100px;</code>
+</p>
+<p>
+<code>margin: 5px;</code><br>
+</p>
+<p>
+<code>padding: 5px;</code><br>
+<code>padding: 0px 10px;</code><br>
+<code>padding-left: 10px;</code>
+</p>
+<p>
+<code>display: inline-block;</code><br>
+<code>vertical-align: top;</code>
+</p>
+<p>
+<code>cursor: pointer;</code>
+</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+    target="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN CSS reference</a>
+</p>
+
+
+
+
+
+
+</div>
+
+</body>
+
+</html>

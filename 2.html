@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Web Workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous">
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+
+  <style>
+  html body { padding: 15px 0px; margin-bottom: 200px;}
+  ul { list-style-type: square; }
+  .home_page { margin-top: 50px; }
+  .home_page h2 { color: #5bc0de; text-shadow: 2px 2px rgba(0, 0, 0, 0.1); }
+  .devise_form { max-width: 300px; display: inline-block; }
+  table th { padding-right: 10px; border-bottom: 1px solid #ccc; }
+  table td { padding-right: 10px; }
+  pre { max-height: 300px; background-color: #fff; color: #a04; }
+  .tab-pane-content { padding: 10px; }
+  #server_events { white-space: nowrap; overflow-x: scroll; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px; }
+  .alert { text-align: left; }
+  h1 {border-top: 1px solid black;}
+  </style>
+
+
+<body>
+
+<div class="container-fluid">
+
+<a href="index.html"><i class="fa fa-home"></i></a>
+
+<h3>Can these be accessed from school network?</h3>
+
+<a href="http://find_a_path-lachdoug538428.codeanyapp.com/">Sample app</a><br>
+<a href="https://codeanywhere.com">Codeanywhere</a>
+
+<h3>Does the Scratch game work in your browser?</h3>
+<a href="http://codepen.io/lachdoug/pen/XjvQjK">Scratch in codepen</a><br>
+<a href="find_a_path.html" target="_blank"><h2>Scratch in a normal site.</h2></a>
+
+<h1>HTML tag review</h1>
+
+<h3>1</h3>
+<p>
+<code>h1 - h6</code>
+</p>
+<p>
+<code>p</code>, <code>br</code>, <code>div</code>
+</p>
+<p>
+<code>a</code>, <code>strong</code>, <code>small</code>, <code>i</code>, <code>span</code>
+</p>
+<p>
+<code>ol</code>, <code>ul</code>, <code>li</code>
+</p>
+
+<h3>2</h3>
+<p>Start building a website for your game (i.e. the class project game written in Scratch, Gamemaker or elsewhere).</p>
+<p>Add some content using as many of the above tags as you can.</p>
+
+
+<h1>Images</h1>
+
+<h3>1</h3>
+<p>Add an image:</p>
+<pre>
+&lt;div id="logo"&gt;
+  &lt;img src="https://static-s.aa-cdn.net/img/gp/20600002144900/QcM5ze2mGK0frV4cbdL7otLHts8p_RoC-N2mggz7M6Jv36vZN3B9Y3OmFvJwwLHuUyDc=w300?v=1"&gt;&lt;/img&gt;
+  Kitty.
+&lt;/div&gt;
+</pre>
+
+<h3>2</h3>
+<p>Add CSS</p>
+<pre>
+#logo img { vertical-align: middle; margin-top: -3px; height: 96px; }
+</pre>
+
+<h3>3</h3>
+<p>Find a different image online. Get its URL and add the image image to the page too.</p>
+
+
+<h1>Fonts</h1>
+
+<h3>1</h3>
+<p><a href="https://fonts.google.com/specimen/Chewy?query=chewy" target="https://fonts.google.com/specimen/Chewy?query=chewy">Google Fonts - Chewy</a></p>
+
+<h3>2</h3>
+<p>Add to <code>&lt;head&gt;</code>:</p>
+<pre>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chewy"&gt;
+</pre>
+
+<h3>3</h3>
+<p>Add to CSS:</p>
+<pre>body { font-family: 'Chewy', cursive; font-size: 1.5em; }
+</pre>
+
+<h1>Icons</h1>
+
+<h3>1</h3>
+<p>Popular icon libraries include:</p>
+<ul>
+  <li><a href="http://fontawesome.io" target="http://fontawesome.io">Font Awesome</a></li>
+  <li><a href="https://design.google.com/icons/" target="https://design.google.com/icons/">Google icons</a></li>
+</ul>
+
+<h3>2</h3>
+<p>Try Font Awesome. Add to <code>&lt;head&gt;</code>:</p>
+<pre>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"&gt;
+</pre>
+
+<h3>3</h3>
+<p>Use <code>&lt;i&gt;</code> tags to create icon elements.</p>
+<p><code>&lt;i class="fa fa-comment-o"&gt;&lt;/i&gt;</code> for <i class="fa fa-comment-o"></i></p>
+<p><code>&lt;i class="fa fa-comments-o"&gt;&lt;/i&gt;</code> for <i class="fa fa-comments-o"></i>.</p>
+
+<h3>4</h3>
+<p>Try:</p>
+<pre>&lt;div&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt; Cancel&lt;/div&gt;
+</pre>
+
+<h1>Front-end frameworks</h1>
+
+<h3>1</h3>
+<p>There are many...</p>
+https://www.keycdn.com/blog/front-end-frameworks/
+
+<h3>2</h3>
+<p>Bootstrap</p>
+<a href="http://getbootstrap.com/" target="http://getbootstrap.com/">Bootstrap</a>
+<p>Try Bootstrap. Add to <code>&lt;head&gt;</code>:</p>
+
+<p>(Note that Codepen has a shortcut to make it easy to add bootstrap.)<p>
+
+<pre>
+&lt;link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous"&gt;
+&lt;script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+  crossorigin="anonymous"&gt;&lt;/script&gt;
+</pre>
+
+
+
+
+</div>
+
+</body>
+
+</html>
