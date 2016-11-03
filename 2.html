@@ -63,9 +63,38 @@
 </p>
 
 <h3>2</h3>
-<p>Start building a website for your game (i.e. the class project game written in Scratch, Gamemaker or elsewhere).</p>
-<p>Add some content using as many of the above tags as you can.</p>
+<p>Build a website for your game (i.e. the class project game written in Scratch, Gamemaker or elsewhere).</p>
+<p>Experiment with tags by adding content that describes your game, gives instructions on how to play, etc.</p>
+<p>Here's a start. Open Codepen and paste this in a new pen:</p>
+<pre>
+&lt;h1 id="page_title">My Game&lt;/h1&gt;
 
+&lt;div class="body_text"&gt;
+  &lt;p&gt;My Game is a cool Scratch app. Play it by pressing buttons and stuff.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Press left/right arrow to move left/right.&lt;/li&gt;
+    &lt;li&gt;Up to go. Down to stop.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="footer"&gt;
+  Share this game with friends...
+&lt;/div&gt;
+</pre>
+<pre>
+body {
+  font-family: Arial;
+  font-size: 24px; }
+
+#page_title { color: red; }
+
+.body_text { color: #0000FF; }
+
+.footer {
+  text-align: center;
+  background-color: #aaf; }
+</pre>
 
 <h1>Images</h1>
 
@@ -81,7 +110,7 @@
 <h3>2</h3>
 <p>Add CSS</p>
 <pre>
-#logo img { vertical-align: middle; margin-top: -3px; height: 96px; }
+#logo img { vertical-align: middle; height: 96px; }
 </pre>
 
 <h3>3</h3>
@@ -99,8 +128,8 @@
 </pre>
 
 <h3>3</h3>
-<p>Add to CSS:</p>
-<pre>body { font-family: 'Chewy', cursive; font-size: 1.5em; }
+<p>Change to CSS:</p>
+<pre>body { font-family: 'Chewy', Arial }
 </pre>
 
 <h1>Icons</h1>
@@ -130,15 +159,12 @@
 <h1>Front-end frameworks</h1>
 
 <h3>1</h3>
-<p>There are many...</p>
-https://www.keycdn.com/blog/front-end-frameworks/
+<p>There are many...
+<a href="https://www.keycdn.com/blog/front-end-frameworks/" target="https://www.keycdn.com/blog/front-end-frameworks/">Some popular frameworks</a>
+</p>
 
 <h3>2</h3>
-<p>Bootstrap</p>
-<a href="http://getbootstrap.com/" target="http://getbootstrap.com/">Bootstrap</a>
-<p>Try Bootstrap. Add to <code>&lt;head&gt;</code>:</p>
-
-<p>(Note that Codepen has a shortcut to make it easy to add bootstrap.)<p>
+<p>Try <a href="http://getbootstrap.com/" target="http://getbootstrap.com/">Bootstrap</a>. Add to <code>&lt;head&gt;</code> (note that Codepen has a shortcut to make it easy to add Bootstrap):</p>
 
 <pre>
 &lt;link rel="stylesheet"
@@ -150,9 +176,6 @@ https://www.keycdn.com/blog/front-end-frameworks/
   integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
   crossorigin="anonymous"&gt;&lt;/script&gt;
 </pre>
-
-
-
 
 </div>
 
