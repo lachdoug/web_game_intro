@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Pathfinder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+
+  <style>
+  html {
+    background-image: url(http://lifewithoutbaby.com/wp-content/uploads/path.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+  body {
+  font-family: 'Architects Daughter', cursive;      color: white;
+    margin: 0px;
+  }
+  .page_background {
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  .page_content {
+    display: inline-block;
+    max-width: 600px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(0,100,0,0.5);
+  }
+  .title {
+    font-size: 48px;
+    padding: 20px;
+  }
+
+  .description {
+    display: inline-block;
+    font-size: 24px;
+    /*font-family: sans-serif;*/
+  }
+
+  .screenshots {
+    margin: 20px;
+  }
+
+  .screenshots img {
+    border: 5px solid green;
+    width: 30%;
+  }
+
+  .embedded_game {
+    display: inline-block;
+    line-height: 402px;
+    height: 402px;
+    width: 485px;
+    border: 10px solid green;
+    margin: 20px;
+    position: relative;
+  }
+
+  .embedded_game .fa-spinner {
+    display: inline-block;
+    font-size: 96px;
+    color: white;
+    opacity: 0.75;
+    vertical-align: middle;
+  }
+
+
+
+  .embedded_game iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .social_links {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 48px;
+  }
+
+  .social_links a {
+    color: white;
+  }
+
+
+  </style>
+
+<body>
+
+  <div class="page_background">
+    <div class="page_content">
+
+      <div class="title">
+        Pathfinder
+      </div>
+
+      <div class="embedded_game">
+        <i class="fa fa-spinner fa-spin"></i>
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/107311105/?autostart=false" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="description">
+        <div class="justified_text">
+          Click on the blue tiles to turn them. Find a continuous path between the green and red squares. If you get stuck, press Go to try again.
+        </div>
+      </div>
+
+      <div class="screenshots">
+        <img src="https://lachdoug.github.io/web_game_intro/assets/images/pathfinder_screen1.png"></img>
+        <img src="https://lachdoug.github.io/web_game_intro/assets/images/pathfinder_screen2.png"></img>
+        <img src="https://lachdoug.github.io/web_game_intro/assets/images/pathfinder_screen3.png"></img>
+      </div>
+
+      <div class="footer">
+        Share
+        <div class="social_links">
+          <a id='twitter-link' target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+<script>
+  document.getElementById('twitter-link').setAttribute("href", "https://twitter.com/intent/tweet?text=" + escape("Checkout my @scratch game Pathfinder " + window.location.href));
+</script>
+
+</html>
